@@ -1,11 +1,3 @@
-
- PyTorch version: 2.6.0+cu126
- CUDA version 	: 12.6
- GPU cuda:(0) 	: NVIDIA A100-PCIE-40GB
-
- TVM GPU Arch	: 8.0
---------------------------------------------------
-
  [model] Unified bench test for bert_base
  [bert_base] Unified bench test for BigBird_Mask
  bs:1 | h_num:12 | seq:128  |  Bolt    : 6.76 ms / iter
@@ -25,8 +17,6 @@
  [vit_base] Unified bench test for BigBird_Mask
  bs:1 | h_num:12 | seq:128  |  Bolt    : 563.22 ms / iter
 
-
-
  [model] Unified bench test for bert_base
  [bert_base] Unified bench test for BigBird_Mask
  bs:8 | h_num:12 | seq:512  |  Bolt    : 20.33 ms / iter
@@ -45,7 +35,6 @@
  [model] Unified bench test for vit_base
  [vit_base] Unified bench test for BigBird_Mask
  bs:8 | h_num:12 | seq:512  |  Bolt    : 603.31 ms / iter
-
 
  [model] Unified bench test for bert_base
  [bert_base] Unified bench test for BigBird_Mask
