@@ -1,0 +1,206 @@
+
+bert_base
+e2e bert_base | bs:1 | seq:128  |  Torch Native    : 7.246 ms / iter
+bert_base
+e2e bert_base | bs:1 | seq:128  |  Torch Compile   : 4.932 ms / iter
+bert_base
+e2e bert_base | bs:1 | seq:128  |  ByteTransformer : 4.963 ms / iter
+bert_base
+e2e bert_base | bs:1 | seq:128  |  STOF            : 4.803 ms / iter
+bert_base
+e2e bert_base | bs:1 | seq:128  |  MCFuser : 5.729 ms / iter
+
+
+bert_large
+e2e bert_large | bs:1 | seq:128  |  Torch Native    : 14.132 ms / iter
+bert_large
+e2e bert_large | bs:1 | seq:128  |  Torch Compile   : 10.070 ms / iter
+bert_large
+e2e bert_large | bs:1 | seq:128  |  ByteTransformer : 9.981 ms / iter
+bert_large
+e2e bert_large | bs:1 | seq:128  |  STOF            : 9.911 ms / iter
+bert_large
+e2e bert_large | bs:1 | seq:128  |  MCFuser : 11.652 ms / iter
+
+
+gpt
+e2e gpt | bs:1 | seq:128  |  Torch Native    : 9.035 ms / iter
+gpt
+e2e gpt | bs:1 | seq:128  |  Torch Compile   : 7.167 ms / iter
+gpt
+e2e gpt | bs:1 | seq:128  |  ByteTransformer : 5.859 ms / iter
+gpt
+e2e gpt | bs:1 | seq:128  |  STOF            : 5.859 ms / iter
+gpt
+e2e gpt | bs:1 | seq:128  |  MCFuser : 7.516 ms / iter
+
+
+t5
+e2e t5 | bs:1 | seq:128  |  Torch Native    : 21.922 ms / iter
+t5
+e2e t5 | bs:1 | seq:128  |  Torch Compile   : 15.719 ms / iter
+t5
+e2e t5 | bs:1 | seq:128  |  ByteTransformer : 18.919 ms / iter
+t5
+e2e t5 | bs:1 | seq:128  |  STOF            : 14.812 ms / iter
+t5
+e2e t5 | bs:1 | seq:128  |  MCFuser : 16.486 ms / iter
+
+
+llama_base
+e2e llama_base | bs:1 | seq:128  |  Torch Native    : 38.550 ms / iter
+llama_base
+e2e llama_base | bs:1 | seq:128  |  Torch Compile   : 24.795 ms / iter
+llama_base
+e2e llama_base | bs:1 | seq:128  |  ByteTransformer : 33.523 ms / iter
+llama_base
+e2e llama_base | bs:1 | seq:128  |  STOF            : 22.237 ms / iter
+llama_base
+e2e llama_base | bs:1 | seq:128  |  MCFuser : 34.669 ms / iter
+
+
+vit_base
+e2e vit_base | bs:1 | seq:128  |  Torch Native    : 502.290 ms / iter
+vit_base
+e2e vit_base | bs:1 | seq:128  |  Torch Compile   : 499.150 ms / iter
+vit_base
+e2e vit_base | bs:1 | seq:128  |  ByteTransformer : 388.250 ms / iter
+vit_base
+e2e vit_base | bs:1 | seq:128  |  STOF            : 374.783 ms / iter
+
+
+bert_base
+e2e bert_base | bs:8 | seq:512  |  Torch Native    : 10.671 ms / iter
+bert_base
+e2e bert_base | bs:8 | seq:512  |  Torch Compile   : 7.098 ms / iter
+bert_base
+e2e bert_base | bs:8 | seq:512  |  ByteTransformer : 8.952 ms / iter
+bert_base
+e2e bert_base | bs:8 | seq:512  |  STOF            : 5.979 ms / iter
+bert_base
+e2e bert_base | bs:8 | seq:512  |  MCFuser : 7.311 ms / iter
+
+
+bert_large
+e2e bert_large | bs:8 | seq:512  |  Torch Native    : 33.080 ms / iter
+bert_large
+e2e bert_large | bs:8 | seq:512  |  Torch Compile   : 22.113 ms / iter
+bert_large
+e2e bert_large | bs:8 | seq:512  |  ByteTransformer : 26.300 ms / iter
+bert_large
+e2e bert_large | bs:8 | seq:512  |  STOF            : 18.812 ms / iter
+bert_large
+e2e bert_large | bs:8 | seq:512  |  MCFuser : 21.375 ms / iter
+
+
+gpt
+e2e gpt | bs:8 | seq:512  |  Torch Native    : 12.566 ms / iter
+gpt
+e2e gpt | bs:8 | seq:512  |  Torch Compile   : 7.998 ms / iter
+gpt
+e2e gpt | bs:8 | seq:512  |  ByteTransformer : 10.789 ms / iter
+gpt
+e2e gpt | bs:8 | seq:512  |  STOF            : 7.734 ms / iter
+gpt
+e2e gpt | bs:8 | seq:512  |  MCFuser : 9.590 ms / iter
+
+
+t5
+e2e t5 | bs:8 | seq:512  |  Torch Native    : 30.475 ms / iter
+t5
+e2e t5 | bs:8 | seq:512  |  Torch Compile   : 12.645 ms / iter
+t5
+e2e t5 | bs:8 | seq:512  |  ByteTransformer : 25.621 ms / iter
+t5
+e2e t5 | bs:8 | seq:512  |  STOF            : 11.977 ms / iter
+t5
+e2e t5 | bs:8 | seq:512  |  MCFuser : 39.311 ms / iter
+
+
+llama_base
+e2e llama_base | bs:8 | seq:512  |  Torch Native    : 42.756 ms / iter
+llama_base
+e2e llama_base | bs:8 | seq:512  |  Torch Compile   : 21.924 ms / iter
+llama_base
+e2e llama_base | bs:8 | seq:512  |  ByteTransformer : 32.684 ms / iter
+llama_base
+e2e llama_base | bs:8 | seq:512  |  STOF            : 20.543 ms / iter
+llama_base
+e2e llama_base | bs:8 | seq:512  |  MCFuser : 30.552 ms / iter
+
+
+vit_base
+e2e vit_base | bs:8 | seq:512  |  Torch Native    : 511.552 ms / iter
+vit_base
+e2e vit_base | bs:8 | seq:512  |  Torch Compile   : 418.560 ms / iter
+vit_base
+[ERROR][exec] unsupport seq_len!
+vit_base
+e2e vit_base | bs:8 | seq:512  |  STOF            : 394.658 ms / iter
+
+
+bert_base
+e2e bert_base | bs:16 | seq:2048  |  Torch Native    : 235.331 ms / iter
+bert_base
+e2e bert_base | bs:16 | seq:2048  |  Torch Compile   : 124.869 ms / iter
+bert_base
+ByteTransformer unsupported for seq_len > 1024
+bert_base
+e2e bert_base | bs:16 | seq:2048  |  STOF            : 52.476 ms / iter
+bert_base
+e2e bert_base | bs:16 | seq:2048  |  MCFuser : 186.639 ms / iter
+
+
+bert_large
+e2e bert_large | bs:16 | seq:2048  |  Torch Native    : 644.786 ms / iter
+bert_large
+e2e bert_large | bs:16 | seq:2048  |  Torch Compile   : 353.791 ms / iter
+bert_large
+ByteTransformer unsupported for seq_len > 1024
+bert_large
+e2e bert_large | bs:16 | seq:2048  |  STOF            : 162.428 ms / iter
+bert_large
+e2e bert_large | bs:16 | seq:2048  |  MCFuser : 930.662 ms / iter
+
+
+gpt
+e2e gpt | bs:16 | seq:2048  |  Torch Native    : 276.145 ms / iter
+gpt
+e2e gpt | bs:16 | seq:2048  |  Torch Compile   : 124.903 ms / iter
+gpt
+ByteTransformer unsupported for seq_len > 1024
+gpt
+e2e gpt | bs:16 | seq:2048  |  STOF            : 92.933 ms / iter
+gpt
+e2e gpt | bs:16 | seq:2048  |  MCFuser : 228.308 ms / iter
+
+
+t5
+e2e t5 | bs:16 | seq:2048  |  Torch Native    : 687.145 ms / iter
+t5
+e2e t5 | bs:16 | seq:2048  |  Torch Compile   : 230.646 ms / iter
+t5
+ByteTransformer unsupported for seq_len > 1024
+t5
+e2e t5 | bs:16 | seq:2048  |  STOF            : 138.067 ms / iter
+t5
+e2e t5 | bs:16 | seq:2048  |  MCFuser : 528.240 ms / iter
+
+
+llama_base
+e2e llama_base | bs:16 | seq:2048  |  Torch Native    : 543.426 ms / iter
+llama_base
+e2e llama_base | bs:16 | seq:2048  |  Torch Compile   : 536.979 ms / iter
+llama_base
+ByteTransformer unsupported for seq_len > 1024
+llama_base
+e2e llama_base | bs:16 | seq:2048  |  STOF            : 141.618 ms / iter
+
+vit_base
+e2e vit_base | bs:16 | seq:2048  |  Torch Native    : 511.653 ms / iter
+vit_base
+e2e vit_base | bs:16 | seq:2048  |  Torch Compile   : 536.735 ms / iter
+vit_base
+[ERROR][exec] unsupport seq_len!
+vit_base
+e2e vit_base | bs:16 | seq:2048  |  STOF            : 517.177 ms / iter

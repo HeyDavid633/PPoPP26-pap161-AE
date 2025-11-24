@@ -1,0 +1,23 @@
+=== SPLAT Performance Test Results ===
+Test Time: Sun Nov 23 11:21:10 UTC 2025
+==========================================
+Batch Size | Seq Length | Time (ms/iter)
+-----------|------------|----------------
+ bs:1 | h_num:12 | seq:128  |  SPLAT  :    23.292 ms / iter
+ bs:1 | h_num:12 | seq:256  |  SPLAT  :    19.587 ms / iter
+ bs:1 | h_num:12 | seq:512  |  SPLAT  :    11.345 ms / iter
+ bs:1 | h_num:12 | seq:1024  |  SPLAT  :    15.902 ms / iter
+ bs:1 | h_num:12 | seq:2048  |  SPLAT  :    12.696 ms / iter
+ bs:1 | h_num:12 | seq:4096  |  SPLAT  :    11.598 ms / iter
+ bs:8 | h_num:12 | seq:128  |  SPLAT  :    15.868 ms / iter
+ bs:8 | h_num:12 | seq:256  |  SPLAT  :    16.766 ms / iter
+ bs:8 | h_num:12 | seq:512  |  SPLAT  :    19.341 ms / iter
+ bs:8 | h_num:12 | seq:1024  |  SPLAT  :    17.944 ms / iter
+ bs:8 | h_num:12 | seq:2048  |  SPLAT  :    21.708 ms / iter
+ bs:8 | h_num:12 | seq:4096  |  SPLAT  :    46.065 ms / iter
+ bs:16 | h_num:12 | seq:128  |  SPLAT  :    2.618 ms / iter
+ bs:16 | h_num:12 | seq:256  |  SPLAT  :    9.692 ms / iter
+ bs:16 | h_num:12 | seq:512  |  SPLAT  :    37.425 ms / iter
+ bs:16 | h_num:12 | seq:1024  |  SPLAT  :    148.668 ms / iter
+ bs:16 | h_num:12 | seq:2048  |  SPLAT  :    595.488 ms / iter
+ bs:16 | h_num:12 | seq:4096  |  SPLAT  :    2384.526 ms / iter

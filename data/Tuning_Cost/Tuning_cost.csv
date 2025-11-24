@@ -1,0 +1,108 @@
+Script started on 2025-11-24 09:44:36+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_base | bs:1 | seq:128  |  STOF Tuning Cost : 226.707 ms 
+
+
+Script done on 2025-11-24 09:44:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:44:43+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_large | bs:1 | seq:128  |  STOF Tuning Cost : 242.179 ms 
+
+
+Script done on 2025-11-24 09:44:52+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:44:52+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e gpt | bs:1 | seq:128  |  STOF Tuning Cost : 683.378 ms 
+
+
+Script done on 2025-11-24 09:44:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:44:59+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e llama_base | bs:1 | seq:128  |  STOF Tuning Cost : 362.759 ms 
+
+
+Script done on 2025-11-24 09:45:08+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:45:08+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e t5 | bs:1 | seq:128  |  STOF Tuning Cost : 245.032 ms 
+
+
+Script done on 2025-11-24 09:45:16+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:45:16+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=1         --seq_len=128         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e vit_base | bs:1 | seq:128  |  STOF Tuning Cost : 811.930 ms 
+
+
+Script done on 2025-11-24 09:45:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:45:24+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_base | bs:8 | seq:512  |  STOF Tuning Cost : 510.277 ms 
+
+
+Script done on 2025-11-24 09:45:35+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:45:35+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_large | bs:8 | seq:512  |  STOF Tuning Cost : 393.793 ms 
+
+
+Script done on 2025-11-24 09:45:51+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:45:51+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e gpt | bs:8 | seq:512  |  STOF Tuning Cost : 260.581 ms 
+
+
+Script done on 2025-11-24 09:46:02+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:46:02+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e llama_base | bs:8 | seq:512  |  STOF Tuning Cost : 388.656 ms 
+
+
+Script done on 2025-11-24 09:46:17+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:46:17+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e t5 | bs:8 | seq:512  |  STOF Tuning Cost : 262.850 ms 
+
+
+Script done on 2025-11-24 09:46:29+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:46:29+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=8         --seq_len=512         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e vit_base | bs:8 | seq:512  |  STOF Tuning Cost : 1246.790 ms 
+
+
+Script done on 2025-11-24 09:46:40+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:46:40+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_base | bs:16 | seq:2048  |  STOF Tuning Cost : 368.532 ms 
+
+
+Script done on 2025-11-24 09:47:21+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:47:21+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e bert_large | bs:16 | seq:2048  |  STOF Tuning Cost : 1045.795 ms 
+
+
+Script done on 2025-11-24 09:48:16+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:48:16+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e gpt | bs:16 | seq:2048  |  STOF Tuning Cost : 709.336 ms 
+
+
+Script done on 2025-11-24 09:48:57+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:48:57+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e llama_base | bs:16 | seq:2048  |  STOF Tuning Cost : 1119.327 ms 
+
+
+Script done on 2025-11-24 09:49:53+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:49:53+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e t5 | bs:16 | seq:2048  |  STOF Tuning Cost : 678.470 ms 
+
+
+Script done on 2025-11-24 09:50:35+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:50:35+00:00 [COMMAND="python tuning_STOF_cost.py         --method=STOF         --batch_size=16         --seq_len=2048         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="192" LINES="19"]
+
+ e2e vit_base | bs:16 | seq:2048  |  STOF Tuning Cost : 1255.057 ms 
+
+
+Script done on 2025-11-24 09:50:49+00:00 [COMMAND_EXIT_CODE="0"]

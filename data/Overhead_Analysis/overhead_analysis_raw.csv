@@ -1,0 +1,72 @@
+Script started on 2025-11-24 09:20:30+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_base | bs:1 | seq:128  | analysis_model 13.390 ms | encoding: 76.053 ms |  decoding: 114.080 ms  |  reward: 285.199 ms
+
+Script done on 2025-11-24 09:20:35+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:20:35+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_large | bs:1 | seq:128  | analysis_model 3.609 ms | encoding: 107.240 ms |  decoding: 160.860 ms  |  reward: 402.150 ms
+
+Script done on 2025-11-24 09:20:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:20:41+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+gpt | bs:1 | seq:128  | analysis_model 3.608 ms | encoding: 79.826 ms |  decoding: 119.739 ms  |  reward: 299.347 ms
+
+Script done on 2025-11-24 09:20:46+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:20:46+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+llama_base | bs:1 | seq:128  | analysis_model 3.669 ms | encoding: 71.391 ms |  decoding: 107.086 ms  |  reward: 267.716 ms
+
+Script done on 2025-11-24 09:20:51+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:20:51+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+t5 | bs:1 | seq:128  | analysis_model 3.583 ms | encoding: 160.482 ms |  decoding: 240.724 ms  |  reward: 601.809 ms
+
+Script done on 2025-11-24 09:20:57+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:20:57+00:00 [COMMAND="python overhead_analysis.py         --batch_size=1         --seq_len=128         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+vit_base | bs:1 | seq:128  | analysis_model 3.611 ms | encoding: 72.811 ms |  decoding: 109.216 ms  |  reward: 273.041 ms
+
+Script done on 2025-11-24 09:21:02+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:02+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_base | bs:8 | seq:512  | analysis_model 7.423 ms | encoding: 77.082 ms |  decoding: 115.622 ms  |  reward: 289.056 ms
+
+Script done on 2025-11-24 09:21:08+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:08+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_large | bs:8 | seq:512  | analysis_model 7.471 ms | encoding: 142.145 ms |  decoding: 213.217 ms  |  reward: 533.042 ms
+
+Script done on 2025-11-24 09:21:14+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:14+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+gpt | bs:8 | seq:512  | analysis_model 7.404 ms | encoding: 65.226 ms |  decoding: 97.839 ms  |  reward: 244.597 ms
+
+Script done on 2025-11-24 09:21:20+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:20+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+llama_base | bs:8 | seq:512  | analysis_model 7.414 ms | encoding: 101.194 ms |  decoding: 151.791 ms  |  reward: 379.478 ms
+
+Script done on 2025-11-24 09:21:27+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:27+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+t5 | bs:8 | seq:512  | analysis_model 7.428 ms | encoding: 96.142 ms |  decoding: 144.213 ms  |  reward: 360.532 ms
+
+Script done on 2025-11-24 09:21:33+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:33+00:00 [COMMAND="python overhead_analysis.py         --batch_size=8         --seq_len=512         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+vit_base | bs:8 | seq:512  | analysis_model 7.447 ms | encoding: 75.128 ms |  decoding: 112.692 ms  |  reward: 281.730 ms
+
+Script done on 2025-11-24 09:21:39+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:39+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_base | bs:16 | seq:2048  | analysis_model 87.881 ms | encoding: 99.701 ms |  decoding: 149.552 ms  |  reward: 373.879 ms
+
+Script done on 2025-11-24 09:21:48+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:48+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+bert_large | bs:16 | seq:2048  | analysis_model 76.479 ms | encoding: 78.801 ms |  decoding: 118.202 ms  |  reward: 295.504 ms
+
+Script done on 2025-11-24 09:21:58+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:21:58+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+gpt | bs:16 | seq:2048  | analysis_model 71.064 ms | encoding: 86.585 ms |  decoding: 129.877 ms  |  reward: 324.693 ms
+
+Script done on 2025-11-24 09:22:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:22:07+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+llama_base | bs:16 | seq:2048  | analysis_model 72.210 ms | encoding: 93.728 ms |  decoding: 140.593 ms  |  reward: 351.482 ms
+
+Script done on 2025-11-24 09:22:16+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:22:16+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+t5 | bs:16 | seq:2048  | analysis_model 75.777 ms | encoding: 115.894 ms |  decoding: 173.840 ms  |  reward: 434.601 ms
+
+Script done on 2025-11-24 09:22:25+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:22:25+00:00 [COMMAND="python overhead_analysis.py         --batch_size=16         --seq_len=2048         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="18"]
+vit_base | bs:16 | seq:2048  | analysis_model 74.408 ms | encoding: 83.285 ms |  decoding: 124.928 ms  |  reward: 312.320 ms
+
+Script done on 2025-11-24 09:22:34+00:00 [COMMAND_EXIT_CODE="0"]

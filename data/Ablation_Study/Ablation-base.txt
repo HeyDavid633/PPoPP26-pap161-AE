@@ -1,0 +1,566 @@
+Script started on 2025-11-24 08:52:18+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:1 | seq:128  |  STOF MHA        : 4.670 ms / iter
+
+Script done on 2025-11-24 08:52:28+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:52:28+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:1 | seq:128  |  STOF MHA        : 8.834 ms / iter
+
+Script done on 2025-11-24 08:52:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:52:41+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:1 | seq:128  |  STOF MHA        : 5.840 ms / iter
+
+Script done on 2025-11-24 08:52:51+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:52:51+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:1 | seq:128  |  STOF MHA        : 13.592 ms / iter
+
+Script done on 2025-11-24 08:53:04+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:53:04+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:1 | seq:128  |  STOF MHA        : 12.024 ms / iter
+
+Script done on 2025-11-24 08:53:16+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:53:16+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:1 | seq:128  |  STOF MHA        : 411.123 ms / iter
+
+Script done on 2025-11-24 08:53:34+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:53:34+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:8 | seq:512  |  STOF MHA        : 6.999 ms / iter
+
+Script done on 2025-11-24 08:53:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:53:47+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:8 | seq:512  |  STOF MHA        : 20.417 ms / iter
+
+Script done on 2025-11-24 08:54:05+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:54:05+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:8 | seq:512  |  STOF MHA        : 10.698 ms / iter
+
+Script done on 2025-11-24 08:54:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:54:19+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:8 | seq:512  |  STOF MHA        : 15.729 ms / iter
+
+Script done on 2025-11-24 08:54:37+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:54:37+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:8 | seq:512  |  STOF MHA        : 16.617 ms / iter
+
+Script done on 2025-11-24 08:54:54+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:54:54+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:8 | seq:512  |  STOF MHA        : 452.416 ms / iter
+
+Script done on 2025-11-24 08:55:16+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:55:16+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:16 | seq:2048  |  STOF MHA        : 52.855 ms / iter
+
+Script done on 2025-11-24 08:56:00+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:56:00+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:16 | seq:2048  |  STOF MHA        : 155.047 ms / iter
+
+Script done on 2025-11-24 08:57:01+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:57:01+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:16 | seq:2048  |  STOF MHA        : 80.549 ms / iter
+
+Script done on 2025-11-24 08:57:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:57:47+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  STOF MHA        : 134.736 ms / iter
+
+Script done on 2025-11-24 08:58:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:58:47+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  STOF MHA        : 126.012 ms / iter
+
+Script done on 2025-11-24 08:59:35+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:59:35+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  STOF MHA        : 427.567 ms / iter
+
+Script done on 2025-11-24 08:59:58+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:59:58+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:1 | seq:128  |  STOF Compiled    : 9.757 ms / iter
+
+Script done on 2025-11-24 09:00:12+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:00:12+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:1 | seq:128  |  STOF Compiled    : 19.575 ms / iter
+
+Script done on 2025-11-24 09:00:30+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:00:30+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=gpt         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:1 | seq:128  |  STOF Compiled    : 11.037 ms / iter
+
+Script done on 2025-11-24 09:00:44+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:00:44+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=llama_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:1 | seq:128  |  STOF Compiled    : 27.490 ms / iter
+
+Script done on 2025-11-24 09:01:02+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:01:02+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=t5         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:1 | seq:128  |  STOF Compiled    : 26.651 ms / iter
+
+Script done on 2025-11-24 09:01:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:01:19+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=vit_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:1 | seq:128  |  STOF Compiled    : 420.957 ms / iter
+
+Script done on 2025-11-24 09:01:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:01:41+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:8 | seq:512  |  STOF Compiled    : 11.252 ms / iter
+
+Script done on 2025-11-24 09:02:00+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:02:00+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:8 | seq:512  |  STOF Compiled    : 31.228 ms / iter
+
+Script done on 2025-11-24 09:02:23+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:02:23+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=gpt         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:8 | seq:512  |  STOF Compiled    : 10.906 ms / iter
+
+Script done on 2025-11-24 09:02:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:02:41+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=llama_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:8 | seq:512  |  STOF Compiled    : 29.140 ms / iter
+
+Script done on 2025-11-24 09:03:04+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:03:04+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=t5         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:8 | seq:512  |  STOF Compiled    : 28.790 ms / iter
+
+Script done on 2025-11-24 09:03:25+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:03:25+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=vit_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:8 | seq:512  |  STOF Compiled    : 432.859 ms / iter
+
+Script done on 2025-11-24 09:03:51+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:03:51+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:16 | seq:2048  |  STOF Compiled    : 167.441 ms / iter
+
+Script done on 2025-11-24 09:04:42+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:04:42+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:16 | seq:2048  |  STOF Compiled    : 460.695 ms / iter
+
+Script done on 2025-11-24 09:05:52+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:05:52+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=gpt         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:16 | seq:2048  |  STOF Compiled    : 165.171 ms / iter
+
+Script done on 2025-11-24 09:06:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:06:43+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=llama_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  STOF Compiled    : 437.049 ms / iter
+
+Script done on 2025-11-24 09:07:52+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:07:52+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=t5         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  STOF Compiled    : 470.525 ms / iter
+
+Script done on 2025-11-24 09:08:53+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:08:53+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=vit_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  STOF Compiled    : 437.321 ms / iter
+
+Script done on 2025-11-24 09:09:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:09:24+00:00 [COMMAND="python MHA_boundary.py         --model=bert_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 6.078 ms / ite
+e2e bert_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 11.811 ms / ite
+e2e bert_base | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary : 172.248 ms / ite
+
+Script done on 2025-11-24 09:10:20+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:10:20+00:00 [COMMAND="python MHA_boundary.py         --model=bert_large " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e bert_large | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 12.140 ms / ite
+e2e bert_large | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 32.786 ms / ite
+e2e bert_large | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary : 473.251 ms / ite
+
+Script done on 2025-11-24 09:11:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:11:43+00:00 [COMMAND="python MHA_boundary.py         --model=gpt " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 7.237 ms / ite
+e2e gpt | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 14.520 ms / ite
+e2e gpt | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary : 193.193 ms / ite
+
+Script done on 2025-11-24 09:12:37+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:12:37+00:00 [COMMAND="python MHA_boundary.py         --model=llama_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 17.400 ms / ite
+e2e llama_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 27.852 ms / ite
+e2e llama_base | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary : 449.054 ms / ite
+
+Script done on 2025-11-24 09:13:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:13:59+00:00 [COMMAND="python MHA_boundary.py         --model=t5 " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 15.920 ms / ite
+e2e t5 | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 30.371 ms / ite
+e2e t5 | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary : 483.167 ms / ite
+
+Script done on 2025-11-24 09:15:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 09:15:07+00:00 [COMMAND="python MHA_boundary.py         --model=vit_base " TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary : 411.530 ms / ite
+e2e vit_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary : 416.302 ms / ite
+Traceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/MHA_boundary.py", line 795, in <module>
+    nnz, full_row_ptr, full_col_idx, part_row_ptr, part_col_idx, load_row_ptr, load_col_idx, inner_bitmaps = get_OuterTile_storagevit(vit_mask, BLOCK_M, BLOCK_N)
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/util/masks.py", line 345, in get_OuterTile_storagevit
+    nnz = torch.count_nonzero(Mask) / total_elements * 100  
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.01 GiB. GPU 0 has a total capacity of 39.49 GiB of which 422.50 MiB is free. Process 2510484 has 39.07 GiB memory in use. Of the allocated memory 34.48 GiB is allocated by PyTorch, and 4.09 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+Script done on 2025-11-24 09:17:04+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 09:34:44+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 7, in <module>
+    import torch._dynamo
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/__init__.py", line 13, in <module>
+    from . import convert_frame, eval_frame, resume_execution
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/convert_frame.py", line 52, in <module>
+    from torch._dynamo.symbolic_convert import TensorifyState
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/symbolic_convert.py", line 57, in <module>
+    from . import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/trace_rules.py", line 32, in <module>
+    from .variables import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/variables/__init__.py", line 19, in <module>
+    from .base import VariableTracker
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/variables/base.py", line 581, in <module>
+    from . import builder
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/variables/builder.py", line 86, in <module>
+    from ..side_effects import SideEffects
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/side_effects.py", line 21, in <module>
+    from .codegen import PyCodegen
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/codegen.py", line 43, in <module>
+    from .variables.functions import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_dynamo/variables/functions.py", line 73, in <module>
+    from torch.distributed.fsdp._fully_shard import _fsdp_param_group
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/__init__.py", line 1, in <module>
+    from ._flat_param import FlatParameter as FlatParameter
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_flat_param.py", line 33, in <module>
+    from ._fsdp_extensions import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_fsdp_extensions.py", line 8, in <module>
+    from torch.distributed.fsdp._shard_utils import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/fsdp/_shard_utils.py", line 18, in <module>
+    from torch.distributed.tensor import DeviceMesh, DTensor, Replicate, Shard as DShard
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/__init__.py", line 4, in <module>
+    import torch.distributed.tensor._ops  # force import all built-in dtensor ops
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_ops/__init__.py", line 5, in <module>
+    from ._math_ops import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/_ops/_math_ops.py", line 401, in <module>
+    [aten._foreach_norm.Scalar], schema_info=RuntimeSchemaInfo(1, needs_pytree=True)
+     ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_ops.py", line 1265, in __getattr__
+    op, overload_names = _get_packet(qualified_op_name, module_name)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/_ops.py", line 1290, in _get_packet
+    op, overload_names = torch._C._jit_get_operation(qualname)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:47+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 09:34:47+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:48+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:48+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:48+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:48+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 22, in <module>
+    import textwrap
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 915, in _load_unlocked
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:48+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:48+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C
+Script done on 2025-11-24 09:34:49+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:49+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=1 --seq_len=128         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:50+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:50+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+^C
+Script done on 2025-11-24 09:34:50+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:50+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 48, in <module>
+    from torch._utils import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_utils.py", line 5, in <module>
+    import logging
+  File "/usr/lib/python3.12/logging/__init__.py", line 725, in <module>
+    _defaultFormatter = Formatter()
+                        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/logging/__init__.py", line 614, in __init__
+    self._style.validate()
+  File "/usr/lib/python3.12/logging/__init__.py", line 450, in validate
+    def validate(self):
+
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:51+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:51+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 5, in <module>
+    import argparse
+  File "/usr/lib/python3.12/argparse.py", line 95, in <module>
+    from gettext import gettext as _, ngettext
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1528, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1502, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1629, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 128, in _path_join
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:51+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:51+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 410, in <module>
+    _load_global_deps()
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 314, in _load_global_deps
+    ctypes.CDLL(global_deps_lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:51+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:51+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:52+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:52+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=8 --seq_len=512         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:52+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:52+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=bert_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+^C
+Script done on 2025-11-24 09:34:53+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:53+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=bert_large         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 34, in <module>
+    from typing_extensions import ParamSpec as _ParamSpec
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1124, in get_code
+  File "<frozen importlib._bootstrap_external>", line 753, in _compile_bytecode
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:53+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:53+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=gpt         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C
+Script done on 2025-11-24 09:34:53+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:53+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=llama_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CFatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176, in exec_module
+  File "<frozen site>", line 643, in <module>
+  File "<frozen site>", line 630, in main
+  File "<frozen site>", line 413, in addsitepackages
+  File "<frozen site>", line 242, in addsitedir
+  File "<frozen site>", line 201, in addpackage
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.12/dist-packages/_numba_cuda_redirector.py", line 2, in <module>
+    import importlib.abc
+  File "/usr/lib/python3.12/importlib/abc.py", line 18, in <module>
+    from .resources import abc as _resources_abc
+  File "/usr/lib/python3.12/importlib/resources/__init__.py", line 3, in <module>
+    from ._common import (
+  File "/usr/lib/python3.12/importlib/resources/_common.py", line 2, in <module>
+    import pathlib
+  File "/usr/lib/python3.12/pathlib.py", line 19, in <module>
+    from urllib.parse import quote_from_bytes as urlquote_from_bytes
+  File "/usr/lib/python3.12/urllib/parse.py", line 253, in <module>
+    _ParseResultBase = namedtuple(
+                       ^^^^^^^^^^^
+  File "/usr/lib/python3.12/collections/__init__.py", line 441, in namedtuple
+    __new__ = eval(code, namespace)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 0, in <module>
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:53+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 09:34:53+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=t5         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 48, in <module>
+    from torch._utils import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_utils.py", line 5, in <module>
+    import logging
+  File "/usr/lib/python3.12/logging/__init__.py", line 2280, in <module>
+    import atexit
+  File "<frozen importlib._bootstrap>", line 1357, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 417, in __enter__
+  File "<frozen importlib._bootstrap>", line 437, in _get_module_lock
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:54+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:54+00:00 [COMMAND="python ablation_onlyMHA.py         --batch_size=16 --seq_len=2048         --model=vit_base         --method=STOF " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyMHA.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 410, in <module>
+    _load_global_deps()
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 314, in _load_global_deps
+    ctypes.CDLL(global_deps_lib_path, mode=ctypes.RTLD_GLOBAL)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:54+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:54+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CFatal Python error: init_import_site: Failed to import the site module
+Python runtime state: initialized
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 1176, in exec_module
+  File "<frozen site>", line 643, in <module>
+  File "<frozen site>", line 630, in main
+  File "<frozen site>", line 413, in addsitepackages
+  File "<frozen site>", line 242, in addsitedir
+  File "<frozen site>", line 201, in addpackage
+  File "<string>", line 1, in <module>
+  File "/usr/local/lib/python3.12/dist-packages/_numba_cuda_redirector.py", line 2, in <module>
+    import importlib.abc
+  File "/usr/lib/python3.12/importlib/abc.py", line 18, in <module>
+    from .resources import abc as _resources_abc
+  File "/usr/lib/python3.12/importlib/resources/__init__.py", line 3, in <module>
+    from ._common import (
+  File "/usr/lib/python3.12/importlib/resources/_common.py", line 8, in <module>
+    import inspect
+  File "/usr/lib/python3.12/inspect.py", line 151, in <module>
+    import linecache
+  File "/usr/lib/python3.12/linecache.py", line 11, in <module>
+    import tokenize
+  File "/usr/lib/python3.12/tokenize.py", line 35, in <module>
+    from token import *
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 921, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 819, in module_from_spec
+  File "<frozen importlib._bootstrap>", line 798, in _init_module_attrs
+  File "<frozen importlib._bootstrap>", line 638, in cached
+  File "<frozen importlib._bootstrap_external>", line 614, in _get_cached
+  File "<frozen importlib._bootstrap_external>", line 519, in cache_from_source
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:54+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 09:34:54+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyfusion.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 53, in <module>
+    from torch._utils_internal import (
+  File "/usr/local/lib/python3.12/dist-packages/torch/_utils_internal.py", line 11, in <module>
+    from torch._strobelight.compile_time_profiler import StrobelightCompileTimeProfiler
+  File "/usr/local/lib/python3.12/dist-packages/torch/_strobelight/compile_time_profiler.py", line 7, in <module>
+    import subprocess
+  File "/usr/lib/python3.12/subprocess.py", line 119, in <module>
+    import selectors
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1528, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1502, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1635, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1590, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 838, in spec_from_file_location
+KeyboardInterrupt
+
+Script done on 2025-11-24 09:34:54+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:54+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=gpt         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyfusion.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+^C
+Script done on 2025-11-24 09:34:55+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:55+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=llama_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyfusion.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+^C
+Script done on 2025-11-24 09:34:56+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:56+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=t5         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^C^C^C^C^C^C^C^C^CTraceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/ablation_onlyfusion.py", line 6, in <module>
+    import torch
+  File "/usr/local/lib/python3.12/dist-packages/torch/__init__.py", line 411, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 463, in _lock_unlock_module
+KeyboardInterrupt
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=1 --seq_len=128         --model=vit_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=gpt         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=llama_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=t5         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=8 --seq_len=512         --model=vit_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=bert_base         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C^C^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-11-24 09:34:57+00:00 [COMMAND="python ablation_onlyfusion.py         --batch_size=16 --seq_len=2048         --model=bert_large         --method=STOF-Compiled " TERM="xterm" TTY="/dev/pts/1" COLUMNS="208" LINES="13"]
+^C
+Script done on 2025-11-24 09:34:57+00:00 [COMMAND_EXIT_CODE="130"]

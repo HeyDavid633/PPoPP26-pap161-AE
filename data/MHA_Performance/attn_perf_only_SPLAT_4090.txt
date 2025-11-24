@@ -1,0 +1,20 @@
+
+ bs:1 | h_num:12 | seq:128  |  SPLAT     : 6.442 ms / iter
+ bs:1 | h_num:12 | seq:256  | SPLAT  : 1.359 ms / iter
+ bs:1 | h_num:12 | seq:512  | SPLAT  : 1.352 ms / iter
+ bs:1 | h_num:12 | seq:1024  | SPLAT  : 1.270 ms / iter
+ bs:1 | h_num:12 | seq:2048  | SPLAT  : 1.390 ms / iter
+ bs:1 | h_num:12 | seq:4096  | SPLAT  : 1.384 ms / iter
+ bs:8 | h_num:12 | seq:128  | SPLAT  : 0.488 ms / iter
+ bs:8 | h_num:12 | seq:256  | SPLAT  : 1.387 ms / iter
+ bs:8 | h_num:12 | seq:512  | SPLAT  : 1.530 ms / iter
+ bs:8 | h_num:12 | seq:1024  | SPLAT  : 1.884 ms / iter
+ bs:8 | h_num:12 | seq:2048  | SPLAT  : 3.582 ms / iter
+ bs:8 | h_num:12 | seq:4096  | SPLAT  : 10.360 ms / iter
+ bs:16 | h_num:12 | seq:128  | SPLAT  : 0.872 ms / iter
+ bs:16 | h_num:12 | seq:256  | SPLAT  : 3.315 ms / iter
+ bs:16 | h_num:12 | seq:512  | SPLAT  : 12.985 ms / iter
+ bs:16 | h_num:12 | seq:1024  | SPLAT  : 51.345 ms / iter
+ bs:16 | h_num:12 | seq:2048  | SPLAT  : 204.234 ms / iter
+ bs:16 | h_num:12 | seq:4096  | SPLAT  : 814.106 ms / iter
+

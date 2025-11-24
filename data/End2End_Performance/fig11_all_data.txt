@@ -1,0 +1,372 @@
+Script started on 2025-11-24 08:03:30+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:1 | seq:128  |  Torch Compile    : 6.035 ms / iter
+
+Script done on 2025-11-24 08:03:40+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:03:40+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:1 | seq:128  |  Torch Native   : 10.135 ms / iter
+
+Script done on 2025-11-24 08:03:54+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:03:54+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:1 | seq:128  |  ByteTransformer : 4.833 ms / iter
+
+Script done on 2025-11-24 08:04:02+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:02+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:1 | seq:128  |  STOF            : 4.677 ms / iter
+
+Script done on 2025-11-24 08:04:11+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:11+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:1 | seq:128  |  MCFuser : 8.588 ms / iter
+
+Script done on 2025-11-24 08:04:20+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:20+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_large                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:1 | seq:128  |  Torch Compile    : 12.082 ms / iter
+
+Script done on 2025-11-24 08:04:30+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:30+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_large                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:1 | seq:128  |  Torch Native   : 20.137 ms / iter
+
+Script done on 2025-11-24 08:04:46+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:46+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_large                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:1 | seq:128  |  ByteTransformer : 9.273 ms / iter
+
+Script done on 2025-11-24 08:04:56+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:04:56+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_large                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:1 | seq:128  |  STOF            : 9.192 ms / iter
+
+Script done on 2025-11-24 08:05:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:05:07+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=bert_large                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:1 | seq:128  |  MCFuser : 17.444 ms / iter
+
+Script done on 2025-11-24 08:05:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:05:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=gpt                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:1 | seq:128  |  Torch Compile    : 7.273 ms / iter
+
+Script done on 2025-11-24 08:05:29+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:05:29+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=gpt                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:1 | seq:128  |  Torch Native   : 11.146 ms / iter
+
+Script done on 2025-11-24 08:05:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:05:41+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=gpt                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:1 | seq:128  |  ByteTransformer : 6.194 ms / iter
+
+Script done on 2025-11-24 08:05:50+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:05:50+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=gpt                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:1 | seq:128  |  STOF            : 5.791 ms / iter
+
+Script done on 2025-11-24 08:06:00+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:00+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=gpt                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:1 | seq:128  |  MCFuser : 9.678 ms / iter
+
+Script done on 2025-11-24 08:06:10+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:10+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=t5                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:1 | seq:128  |  Torch Compile    : 15.731 ms / iter
+
+Script done on 2025-11-24 08:06:21+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:21+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=t5                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:1 | seq:128  |  Torch Native   : 27.242 ms / iter
+
+Script done on 2025-11-24 08:06:36+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:36+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=t5                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:1 | seq:128  |  ByteTransformer : 11.796 ms / iter
+
+Script done on 2025-11-24 08:06:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:47+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=t5                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:1 | seq:128  |  STOF            : 11.551 ms / iter
+
+Script done on 2025-11-24 08:06:58+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:06:58+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=t5                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:1 | seq:128  |  MCFuser : 23.514 ms / iter
+
+Script done on 2025-11-24 08:07:08+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:07:08+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=llama_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:1 | seq:128  |  Torch Compile    : 16.878 ms / iter
+
+Script done on 2025-11-24 08:07:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:07:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=llama_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:1 | seq:128  |  Torch Native   : 27.267 ms / iter
+
+Script done on 2025-11-24 08:07:36+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:07:36+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=llama_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:1 | seq:128  |  ByteTransformer : 14.039 ms / iter
+
+Script done on 2025-11-24 08:07:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:07:47+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=llama_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:1 | seq:128  |  STOF            : 13.377 ms / iter
+
+Script done on 2025-11-24 08:07:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:07:59+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=llama_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:1 | seq:128  |  MCFuser : 22.111 ms / iter
+
+Script done on 2025-11-24 08:08:11+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:08:11+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=vit_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:1 | seq:128  |  Torch Compile    : 414.262 ms / iter
+
+Script done on 2025-11-24 08:08:28+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:08:28+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=vit_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:1 | seq:128  |  Torch Native   : 423.460 ms / iter
+
+Script done on 2025-11-24 08:08:50+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:08:50+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=vit_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+^[[C^[[C        e2e vit_base | bs:1 | seq:128  |  ByteTransformer : 411.379 ms / iter
+
+Script done on 2025-11-24 08:09:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:09:07+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=vit_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:1 | seq:128  |  STOF            : 411.186 ms / iter
+
+Script done on 2025-11-24 08:09:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:09:24+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=1                 --seq_len=128                 --model=vit_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:1 | seq:128  |  MCFuser does not support vit_base
+
+Script done on 2025-11-24 08:09:30+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:09:30+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:8 | seq:512  |  Torch Compile    : 11.662 ms / iter
+
+Script done on 2025-11-24 08:09:42+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:09:42+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:8 | seq:512  |  Torch Native   : 11.224 ms / iter
+
+Script done on 2025-11-24 08:09:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:09:59+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:8 | seq:512  |  ByteTransformer : 11.890 ms / iter
+
+Script done on 2025-11-24 08:10:11+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:10:11+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:8 | seq:512  |  STOF            : 6.958 ms / iter
+
+Script done on 2025-11-24 08:10:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:10:24+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:8 | seq:512  |  MCFuser : 17.494 ms / iter
+
+Script done on 2025-11-24 08:10:39+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:10:39+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_large                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:8 | seq:512  |  Torch Compile    : 32.243 ms / iter
+
+Script done on 2025-11-24 08:10:56+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:10:56+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_large                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:8 | seq:512  |  Torch Native   : 31.237 ms / iter
+
+Script done on 2025-11-24 08:11:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:11:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_large                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:8 | seq:512  |  ByteTransformer : 33.376 ms / iter
+
+Script done on 2025-11-24 08:11:36+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:11:36+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_large                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:8 | seq:512  |  STOF            : 20.353 ms / iter
+
+Script done on 2025-11-24 08:11:53+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:11:53+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=bert_large                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:8 | seq:512  |  MCFuser : 34.431 ms / iter
+
+Script done on 2025-11-24 08:12:11+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:12:11+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=gpt                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:8 | seq:512  |  Torch Compile    : 14.258 ms / iter
+
+Script done on 2025-11-24 08:12:25+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:12:25+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=gpt                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:8 | seq:512  |  Torch Native   : 11.164 ms / iter
+
+Script done on 2025-11-24 08:12:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:12:43+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=gpt                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:8 | seq:512  |  ByteTransformer : 15.542 ms / iter
+
+Script done on 2025-11-24 08:12:57+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:12:57+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=gpt                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:8 | seq:512  |  STOF            : 10.701 ms / iter
+
+Script done on 2025-11-24 08:13:10+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:13:10+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=gpt                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e gpt | bs:8 | seq:512  |  MCFuser : 20.756 ms / iter
+
+Script done on 2025-11-24 08:13:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:13:24+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=t5                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:8 | seq:512  |  Torch Compile    : 30.233 ms / iter
+
+Script done on 2025-11-24 08:13:40+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:13:40+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=t5                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:8 | seq:512  |  Torch Native   : 30.115 ms / iter
+
+Script done on 2025-11-24 08:13:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:13:59+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=t5                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:8 | seq:512  |  ByteTransformer : 31.381 ms / iter
+
+Script done on 2025-11-24 08:14:15+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:14:15+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=t5                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:8 | seq:512  |  STOF            : 16.651 ms / iter
+
+Script done on 2025-11-24 08:14:30+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:14:30+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=t5                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e t5 | bs:8 | seq:512  |  MCFuser : 48.414 ms / iter
+
+Script done on 2025-11-24 08:14:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:14:47+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=llama_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:8 | seq:512  |  Torch Compile    : 27.591 ms / iter
+
+Script done on 2025-11-24 08:15:04+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:15:04+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=llama_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:8 | seq:512  |  Torch Native   : 30.118 ms / iter
+
+Script done on 2025-11-24 08:15:26+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:15:26+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=llama_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:8 | seq:512  |  ByteTransformer : 28.541 ms / iter
+
+Script done on 2025-11-24 08:15:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:15:43+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=llama_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:8 | seq:512  |  STOF            : 15.694 ms / iter
+
+Script done on 2025-11-24 08:15:59+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:15:59+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=llama_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e llama_base | bs:8 | seq:512  |  MCFuser : 31.167 ms / iter
+
+Script done on 2025-11-24 08:16:18+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:16:18+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=vit_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:8 | seq:512  |  Torch Compile    : 423.030 ms / iter
+
+Script done on 2025-11-24 08:16:39+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:16:39+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=vit_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:8 | seq:512  |  Torch Native   : 442.109 ms / iter
+
+Script done on 2025-11-24 08:17:06+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:17:06+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=vit_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+Traceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/benchmk_end2end.py", line 1112, in <module>
+    inference_model(vit_mask)
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/benchmk_end2end.py", line 711, in vit_base_fwd_std
+    ByteTransformer_output = bytetr_attn_pybind_op(vit_qkv_kernel[layer],vit_qkv_bias[layer],layer_head_mask,head_num)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+
+Script done on 2025-11-24 08:17:19+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 08:17:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=vit_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:8 | seq:512  |  STOF            : 418.926 ms / iter
+
+Script done on 2025-11-24 08:17:40+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:17:40+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=8                 --seq_len=512                 --model=vit_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e vit_base | bs:8 | seq:512  |  MCFuser does not support vit_base
+
+Script done on 2025-11-24 08:17:46+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:17:46+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:16 | seq:2048  |  Torch Compile    : 170.988 ms / iter
+
+Script done on 2025-11-24 08:18:31+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:18:31+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:16 | seq:2048  |  Torch Native   : 167.732 ms / iter
+
+Script done on 2025-11-24 08:19:20+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:19:20+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+ByteTransformer unsupported for seq_len > 1024
+
+Script done on 2025-11-24 08:20:03+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:20:03+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:16 | seq:2048  |  STOF            : 53.067 ms / iter
+
+Script done on 2025-11-24 08:20:46+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:20:46+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_base | bs:16 | seq:2048  |  MCFuser : 172.116 ms / iter
+
+Script done on 2025-11-24 08:21:33+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:21:33+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_large                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:16 | seq:2048  |  Torch Compile    : 470.434 ms / iter
+
+Script done on 2025-11-24 08:22:39+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:22:39+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_large                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="17"]
+e2e bert_large | bs:16 | seq:2048  |  Torch Native   : 461.194 ms / iter
+
+Script done on 2025-11-24 08:23:48+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:23:48+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_large                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="22"]
+ByteTransformer unsupported for seq_len > 1024
+
+Script done on 2025-11-24 08:24:45+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:24:45+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_large                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="22"]
+e2e bert_large | bs:16 | seq:2048  |  STOF            : 154.849 ms / iter
+
+Script done on 2025-11-24 08:25:45+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:25:45+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=bert_large                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="22"]
+e2e bert_large | bs:16 | seq:2048  |  MCFuser : 1032.747 ms / iter
+
+Script done on 2025-11-24 08:27:02+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:27:02+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=gpt                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="22"]
+e2e gpt | bs:16 | seq:2048  |  Torch Compile    : 192.852 ms / iter
+
+Script done on 2025-11-24 08:27:50+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:27:50+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=gpt                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="22"]
+^[[A    e2e gpt | bs:16 | seq:2048  |  Torch Native   : 165.309 ms / iter
+
+Script done on 2025-11-24 08:28:41+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:28:41+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=gpt                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+ByteTransformer unsupported for seq_len > 1024
+
+Script done on 2025-11-24 08:29:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:29:24+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=gpt                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:16 | seq:2048  |  STOF            : 80.635 ms / iter
+
+Script done on 2025-11-24 08:30:07+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:30:07+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=gpt                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e gpt | bs:16 | seq:2048  |  MCFuser : 200.303 ms / iter
+
+Script done on 2025-11-24 08:30:54+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:30:54+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=t5                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  Torch Compile    : 481.175 ms / iter
+
+Script done on 2025-11-24 08:31:47+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:31:47+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=t5                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  Torch Native   : 471.355 ms / iter
+
+Script done on 2025-11-24 08:32:45+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:32:45+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=t5                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+ByteTransformer unsupported for seq_len > 1024
+
+Script done on 2025-11-24 08:33:28+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:33:28+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=t5                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  STOF            : 126.322 ms / iter
+
+Script done on 2025-11-24 08:34:15+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:34:15+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=t5                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e t5 | bs:16 | seq:2048  |  MCFuser : 481.513 ms / iter
+
+Script done on 2025-11-24 08:35:10+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:35:10+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=llama_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  Torch Compile    : 446.208 ms / iter
+
+Script done on 2025-11-24 08:36:15+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:36:15+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=llama_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  Torch Native   : 437.200 ms / iter
+
+Script done on 2025-11-24 08:37:24+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:37:24+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=llama_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+ByteTransformer unsupported for seq_len > 1024
+
+Script done on 2025-11-24 08:38:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:38:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=llama_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  STOF            : 134.352 ms / iter
+
+Script done on 2025-11-24 08:39:19+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:39:19+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=llama_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e llama_base | bs:16 | seq:2048  |  MCFuser : 1003.895 ms / iter
+
+Script done on 2025-11-24 08:40:37+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:40:37+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=vit_base                 --method=TorchNative" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  Torch Compile    : 437.340 ms / iter
+
+Script done on 2025-11-24 08:41:01+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:41:01+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=vit_base                 --method=TorchCompile" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  Torch Native   : 451.304 ms / iter
+
+Script done on 2025-11-24 08:41:30+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:41:30+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=vit_base                 --method=ByteTrans" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+Traceback (most recent call last):
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/benchmk_end2end.py", line 1078, in <module>
+    inference_model(vit_mask)
+  File "/PPoPP-STOF-shepherding/PPoPP26-pap161-AE/src/benchmk_end2end.py", line 699, in vit_base_fwd_std
+    ByteTransformer_output = bytetr_attn_pybind_op(vit_qkv_kernel[layer],vit_qkv_bias[layer],layer_head_mask,head_num)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not callable
+
+Script done on 2025-11-24 08:41:46+00:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-11-24 08:41:46+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=vit_base                 --method=STOF" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  STOF            : 424.357 ms / iter
+
+Script done on 2025-11-24 08:42:09+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-24 08:42:09+00:00 [COMMAND="python benchmk_end2end.py                 --batch_size=16                 --seq_len=2048                 --model=vit_base                 --method=MCFuser" TERM="xterm" TTY="/dev/pts/1" COLUMNS="234" LINES="24"]
+e2e vit_base | bs:16 | seq:2048  |  MCFuser does not support vit_base
+
+Script done on 2025-11-24 08:42:16+00:00 [COMMAND_EXIT_CODE="0"]

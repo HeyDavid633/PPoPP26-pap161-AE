@@ -1,0 +1,117 @@
+e2e bert_base | bs:1 | seq:128  |  Torch Native    : 4.803 ms / iter
+e2e bert_base | bs:1 | seq:128  |  STOF MHA        : 3.341 ms / iter
+e2e bert_base | bs:1 | seq:128  |  STOF Compiled   : 2.301 ms / iter
+e2e bert_base | bs:1 | seq:128  |  STOF            : 2.259 ms / iter
+
+e2e bert_large | bs:1 | seq:128  |  Torch Native    : 10.064 ms / iter
+e2e bert_large | bs:1 | seq:128  |  STOF MHA        : 6.926 ms / iter
+e2e bert_large | bs:1 | seq:128  |  STOF Compiled   : 5.420 ms / iter
+e2e bert_large | bs:1 | seq:128  |  STOF            : 4.845 ms / iter
+
+e2e gpt | bs:1 | seq:128  |  Torch Native    : 5.829 ms / iter
+e2e gpt | bs:1 | seq:128  |  STOF MHA        : 4.879 ms / iter
+e2e gpt | bs:1 | seq:128  |  STOF Compiled   : 4.479 ms / iter
+e2e gpt | bs:1 | seq:128  |  STOF            : 4.347 ms / iter
+
+e2e llama_base | bs:1 | seq:128  |  Torch Native    : 28.922 ms / iter
+e2e llama_base | bs:1 | seq:128  |  STOF MHA        : 27.233 ms / iter
+e2e llama_base | bs:1 | seq:128  |  STOF Compiled   : 21.871 ms / iter
+e2e llama_base | bs:1 | seq:128  |  STOF            : 20.407 ms / iter
+
+e2e t5 | bs:1 | seq:128  |  Torch Native    : 15.890 ms / iter
+e2e t5 | bs:1 | seq:128  |  STOF MHA        : 13.760 ms / iter
+e2e t5 | bs:1 | seq:128  |  STOF Compiled   : 9.950 ms / iter
+e2e t5 | bs:1 | seq:128  |  STOF            : 9.233 ms / iter
+
+e2e vit_base | bs:1 | seq:128  |  Torch Native    : 576.138 ms / iter
+e2e vit_base | bs:1 | seq:128  |  STOF MHA        : 551.979 ms / iter
+e2e vit_base | bs:1 | seq:128  |  STOF Compiled   : 511.873 ms / iter
+e2e vit_base | bs:1 | seq:128  |  STOF            : 505.580  ms / iter
+
+e2e bert_base | bs:8 | seq:512  |  Torch Native    : 26.088 ms / iter
+e2e bert_base | bs:8 | seq:512  |  STOF MHA        : 22.424 ms / iter
+e2e bert_base | bs:8 | seq:512  |  STOF Compiled   : 20.864 ms / iter
+e2e bert_base | bs:8 | seq:512  |  STOF            : 18.228 ms / iter
+
+e2e bert_large | bs:8 | seq:512  |  Torch Native    : 71.283 ms / iter
+e2e bert_large | bs:8 | seq:512  |  STOF MHA        : 51.306 ms / iter
+e2e bert_large | bs:8 | seq:512  |  STOF Compiled   : 50.954 ms / iter
+e2e bert_large | bs:8 | seq:512  |  STOF            : 44.143 ms / iter
+
+e2e gpt | bs:8 | seq:512  |  Torch Native    : 34.256 ms / iter
+e2e gpt | bs:8 | seq:512  |  STOF MHA        : 23.183 ms / iter
+e2e gpt | bs:8 | seq:512  |  STOF Compiled   : 20.942 ms / iter
+e2e gpt | bs:8 | seq:512  |  STOF            : 20.767 ms / iter
+
+e2e llama_base | bs:8 | seq:512  |  Torch Native    : 82.020 ms / iter
+e2e llama_base | bs:8 | seq:512  |  STOF MHA        : 52.389 ms / iter
+e2e llama_base | bs:8 | seq:512  |  STOF Compiled   : 50.361 ms / iter
+e2e llama_base | bs:8 | seq:512  |  STOF            : 40.412 ms / iter
+
+e2e t5 | bs:8 | seq:512  |  Torch Native    : 68.445 ms / iter
+e2e t5 | bs:8 | seq:512  |  STOF MHA        : 40.022 ms / iter
+e2e t5 | bs:8 | seq:512  |  STOF Compiled   : 36.128 ms / iter
+e2e t5 | bs:8 | seq:512  |  STOF            : 32.790 ms / iter
+
+e2e vit_base | bs:8 | seq:512  |  Torch Native    : 649.132 ms / iter
+e2e vit_base | bs:8 | seq:512  |  STOF MHA        : 602.903 ms / iter
+e2e vit_base | bs:8 | seq:512  |  STOF Compiled   : 604.577 ms / iter
+e2e vit_base | bs:8 | seq:512  |  STOF            : 575.220 ms / iter
+
+e2e bert_base | bs:16 | seq:2048  |  Torch Native    : 600.351 ms / iter
+e2e bert_base | bs:16 | seq:2048  |  STOF MHA        : 103.989 ms / iter
+e2e bert_base | bs:16 | seq:2048  |  STOF Compiled   : 220.164 ms / iter
+e2e bert_base | bs:16 | seq:2048  |  STOF            : 93.437 ms / iter
+
+e2e bert_large | bs:16 | seq:2048  |  Torch Native    : 532.169 ms / iter
+e2e bert_large | bs:16 | seq:2048  |  STOF MHA        : 163.438 ms / iter
+e2e bert_large | bs:16 | seq:2048  |  STOF Compiled   : 303.709 ms / iter
+e2e bert_large | bs:16 | seq:2048  |  STOF            : 133.609 ms / iter
+
+e2e gpt | bs:16 | seq:2048  |  Torch Native    : 672.150 ms / iter
+e2e gpt | bs:16 | seq:2048  |  STOF MHA        : 184.075 ms / iter
+e2e gpt | bs:16 | seq:2048  |  STOF Compiled   : 364.488 ms / iter
+e2e gpt | bs:16 | seq:2048  |  STOF            : 160.111 ms / iter
+
+e2e llama_base | bs:16 | seq:2048  |  Torch Native    : 524.772 ms / iter
+e2e llama_base | bs:16 | seq:2048  |  STOF MHA        : 202.389 ms / iter
+e2e llama_base | bs:16 | seq:2048  |  STOF Compiled   : 360.361 ms / iter
+e2e llama_base | bs:16 | seq:2048  |  STOF            : 189.622 ms / iter
+
+e2e t5 | bs:16 | seq:2048  |  Torch Native    : 1777.583 ms / iter
+e2e t5 | bs:16 | seq:2048  |  STOF MHA        : 270.672 ms / iter
+e2e t5 | bs:16 | seq:2048  |  STOF Compiled   : 780.582 ms / iter
+e2e t5 | bs:16 | seq:2048  |  STOF            : 249.858 ms / iter
+
+e2e vit_base | bs:16 | seq:2048  |  Torch Native    : 559.745 ms / iter
+e2e vit_base | bs:16 | seq:2048  |  STOF MHA        : 439.897 ms / iter
+e2e vit_base | bs:16 | seq:2048  |  STOF Compiled   : 490.732 ms / iter
+e2e vit_base | bs:16 | seq:2048  |  STOF            : 430.392 ms / iter
+
+
+e2e bert_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            : 4.38159 ms / iter
+e2e bert_large | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            :8.89345 ms / iter
+e2e gpt | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            : 5.39047 ms / iter
+e2e llama_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            : 24.61107 ms / iter
+e2e t5 | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            : 11.32533 ms / iter
+e2e vit_base | bs:1 | seq:128  |  PyTorch Compile with broken MHA boundary            : 530.6358  ms / iter
+
+
+e2e bert_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 25.88376 ms / iter
+e2e bert_large | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 62.68306 ms / iter
+e2e gpt | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 29.48914 ms / iter
+e2e llama_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 57.38504 ms / iter
+e2e t5 | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 46.5618 ms / iter
+e2e vit_base | bs:8 | seq:512  |  PyTorch Compile with broken MHA boundary            : 640.8124  ms / iter
+
+e2e bert_base | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 600.88955 ms / iter
+e2e bert_large | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 487.25935 ms / iter
+e2e gpt | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 344.23865 ms / iter
+e2e llama_base | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 407.6873 ms / iter
+e2e t5 | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 1437.1947 ms / iter
+e2e vit_base | bs:16 | seq:2048  |  PyTorch Compile with broken MHA boundary            : 559.3428  ms / iter
+
+
+
+
+
