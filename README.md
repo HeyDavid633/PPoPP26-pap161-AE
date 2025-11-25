@@ -75,7 +75,7 @@ To actually execute the program and plot the results on the server, follow the s
 cd script
 
 # for Figure 9_10 (~10 minutes)
-bash fig9_10.sh
+bash fig9-10.sh
 
 # for Figure 11 without Bolt (~30 minutes)
 bash fig11.sh
