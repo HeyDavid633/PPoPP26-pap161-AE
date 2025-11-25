@@ -21,7 +21,16 @@ extra_compile_args = {
     "nvcc" : ["-O3", 
     "-I/usr/local/cuda/include", 
     f"-I{str(current_path)}/ops/src/include/cutlass_contrib/include", # CUTLASS
-    f"-gencode=arch=compute_{cuda_arch},code=sm_{cuda_arch}"] 
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include",
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include/cutlass/include",
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include/cutlass/tools/util/include",
+    f"-gencode=arch=compute_{cuda_arch},code=sm_{cuda_arch}"],
+    "cxx": [
+    "-fPIC",
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include",
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include/cutlass/include",
+    f"-I/PPoPP26-pap161-AE/src/ops/src/include/cutlass/tools/util/include",
+    ],
 }
 extra_link_args = []
 
