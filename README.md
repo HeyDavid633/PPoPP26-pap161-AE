@@ -104,6 +104,7 @@ docker run --gpus all --name ae-env --ipc=host --ulimit memlock=-1 --ulimit stac
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu126
 
 # clone the repository and enter the directory
+cd /
 git clone https://github.com/HeyDavid633/PPoPP26-pap161-AE.git
 cd PPoPP26-pap161-AE
 
