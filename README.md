@@ -1,6 +1,6 @@
 # STOF AE
 
-[10.5281/zenodo.17705801](https://doi.org/10.5281/zenodo.17705801)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17705801.svg)](https://doi.org/10.5281/zenodo.17705801)
 
 This folder contains the system prototype of STOF (pap161) at PPoPP '26, titled "Accelerating Sparse Transformer Inference on GPU", including Figure 9_10, Figure 11, Figure 12, Figure 13 and Table 4.
 
