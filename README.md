@@ -9,7 +9,7 @@ The repository is organized as below:
 
 - `data/`: original data log in `data/MHA_performance` for Figure 9_10, `data/End2End_performance` for Figure 11, `data/Ablation_Study` for Figure 12, `data/Overhead_Analysis` for Figure 13. `data/Tuning_Cost` for Table 4.
 
-- `plot/`: quick plotting reproduction code to get the images in the paper, including `fig3/`, `fig4/`, `fig9_10/`, `fig11/`, `fig12/`, and `fig13/`.
+- `plot/`: quick plotting reproduction code to get the figures in the paper, including `fig3/`, `fig4/`, `fig9_10/`, `fig11/`, `fig12/`, and `fig13/`.
 
 - `script/`: `.sh` executable script to install the custom operator in STOF and execute it in full to reproduce the experimental results in the paper. Including `env_install`, `fig9_10.sh`, `fig11.sh`, `fig12.sh`, and `fig13.sh`.
 
@@ -19,11 +19,11 @@ The repository is organized as below:
 
 ### Log into the provided server
 
-A ssh private key is provided for AE reviewers, named `id_rsa_ppopp26_pap161_ae`, to access the provided server.
+A ssh private key is provided for AE reviewers, named `id_rsa_ppopp26_ae`, to access the provided server.
 
 ```shell
 # log into the provided server (A100) 
-ssh -i ./id_rsa_ppopp26_pap161_ae -o IdentitiesOnly=yes -o ProxyCommand="ssh -i ./id_rsa_ppopp26_pap161_ae -o IdentitiesOnly=yes -p 6000 -W %h:%p 19762@8.218.213.105" -p 45005 sunqingxiao@10.254.46.24
+ssh -i ./id_rsa_ppopp26_ae -o IdentitiesOnly=yes -o ProxyCommand="ssh -i ./id_rsa_ppopp26_ae -o IdentitiesOnly=yes -p 6000 -W %h:%p 19762@8.218.213.105" -p 45005 sunqingxiao@10.254.46.24
 
 # enter the container
 docker exec -it stof-v2-ppopp /bin/bash
@@ -113,10 +113,9 @@ cd script
 bash env_install.sh 80
 ```
 
-
 ### Comparisons that need to be run separately in the Artifact
 
-For the comparison of baselines MCFuser and Bolt, we have uploaded the relevant necessary confugration files to  [Google Drive](https://drive.google.com/file/d/17N-PfI0klMa1jHE-1YcpV5oNzjfcFxE4/view?usp=sharing). After downloading them and place the compressed package `ae-mcfuser-test.tar.gz` in `/src`, you need to execute the relevant installation script `script/MCFuser_install.sh`. The detailed steps are as follow:
+For the comparison of baselines MCFuser and Bolt, we have uploaded the relevant necessary configuration files to  [Google Drive](https://drive.google.com/file/d/17N-PfI0klMa1jHE-1YcpV5oNzjfcFxE4/view?usp=sharing). After downloading them and place the compressed package `ae-mcfuser-test.tar.gz` in `/src`, you need to execute the relevant installation script `script/MCFuser_install.sh`. The detailed steps are as follow:
 
 ```shell
 cd PPoPP26-pap161-AE/src

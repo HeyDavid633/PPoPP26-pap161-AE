@@ -17,10 +17,8 @@ if len(sys.argv) > 1:
 else:
     cuda_arch = "80"
 
-
 num_cores = multiprocessing.cpu_count()
 max_jobs = min(32, num_cores * 2)
-
 
 extra_compile_args = {
     "nvcc" : ["-O3", "-w", 
@@ -28,6 +26,11 @@ extra_compile_args = {
     f"-I{str(current_path)}/ops/src/include/", 
     f"-I{str(current_path)}/ops/src/include/cutlass/include",
     f"-gencode=arch=compute_{cuda_arch},code=sm_{cuda_arch}"],
+    "cxx": [
+    "-fPIC",
+    f"-I{str(current_path)}/ops/src/include/",
+    f"-I{str(current_path)}/ops/src/include/cutlass/include",
+    ],
 }
 extra_link_args = []
 

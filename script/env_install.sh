@@ -7,6 +7,7 @@ echo "[SHELL INFO] CUDA Arch: sm_${CUDAARCH}"
 echo "[SHELL INFO] Platform: ${PLATFORM}"
 
 apt update
+apt install -y gcc g++ make
 apt install -y libeigen3-dev
 yes | pip3 install transformers
 yes | pip3 install tilelang
