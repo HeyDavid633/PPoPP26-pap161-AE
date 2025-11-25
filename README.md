@@ -1,5 +1,7 @@
 # STOF AE
 
+https://zenodo.org/records/17705801
+
 This folder contains the system prototype of STOF (pap161) at PPoPP '26, titled "Accelerating Sparse Transformer Inference on GPU", including Figure 9_10, Figure 11, Figure 12, Figure 13 and Table 4.
 
 ## Abstract
@@ -26,7 +28,7 @@ A ssh private key is provided for AE reviewers, named `id_rsa_ppopp26_ae`, to ac
 ssh -i ./id_rsa_ppopp26_ae -o IdentitiesOnly=yes -o ProxyCommand="ssh -i ./id_rsa_ppopp26_ae -o IdentitiesOnly=yes -p 6000 -W %h:%p 19762@8.218.213.105" -p 45005 sunqingxiao@10.254.46.24
 
 # enter the container
-docker exec -it stof-v2-ppopp /bin/bash
+docker exec -it ppopp-stof /bin/bash
 
 # enter the workspace
 cd /PPoPP26-pap161-AE
