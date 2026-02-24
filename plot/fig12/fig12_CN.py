@@ -4,6 +4,11 @@ from matplotlib.ticker import MultipleLocator
 import re
 import matplotlib as mpl
 import argparse
+from matplotlib import font_manager
+
+# 配置中文字体路径
+simsun_path = '/System/Library/Fonts/Supplemental/Songti.ttc'  # Mac 宋体
+zh_font = font_manager.FontProperties(fname=simsun_path)
 
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42 
@@ -160,12 +165,13 @@ plt.rcParams['font.family'] = 'Times New Roman'
 plt.rcParams['font.size'] = 25
 
 MODELS = ['bert_base', 'bert_large', 'gpt', 'llama_base', 't5', 'vit_base']
-MODEL_NAMES = ['BERT-Base', 'BERT-Large', 'GPT-2', 'LLaMA', 'T5', 'ViT']
+MODEL_NAMES = ['BERT-B', 'BERT-L', 'GPT', 'LLaMA', 'T5', 'ViT']
 BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 
 METHODS = ['Torch Native', 'Torch Compile', 'PyTorch Compile with broken MHA boundary', 'STOF MHA', 'STOF Compiled', 'STOF', ]
 COLORS = ['#999595','#AEC7EA', '#DFF1D7', '#F4B1C8', '#F2EDB6', '#CF6B5A',  ] 
-LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile without MHA boundary', 'Only MHA Module', 'Only Fusion Module', 'MHA Module+Fusion Module',  ]
+# LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile without MHA boundary', 'Only MHA Module', 'Only Fusion Module', 'MHA Module+Fusion Module',  ]
+LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile 破坏MHA boundary', '仅MHA融合模块', '仅下游融合模块', 'MHA融合模块+下游融合模块',  ]
 
 
 def extract_data(normalized_data):
@@ -219,7 +225,7 @@ def plot_subplot(ax, data):
         ax.axvline(x, color='gray', linestyle='--', linewidth=2.7)
 
 
-    ax.set_ylabel('Speedup', fontsize=36)
+    ax.set_ylabel('加速比', fontsize=36, fontproperties=zh_font)
     ax.set_ylim(0, 4)
     ax.set_yticks([0, 1, 2, 3, 4])
     ax.yaxis.set_minor_locator(plt.MultipleLocator(1))
@@ -268,13 +274,14 @@ fig.legend(legend_elements1, LABEL_NAMES[:6],
            loc='upper center',
            ncol=2,
            frameon=False,
-           fontsize=36,
+        #    fontsize=36,
+           prop={'family': zh_font.get_name(), 'size': 36},
            columnspacing=0.3,
-           bbox_to_anchor=(0.52, 1.36))
+           bbox_to_anchor=(0.52, 1.4))
 
 
 plt.subplots_adjust(wspace=0.12, top=0.78)
-plt.savefig('5-Percentage.pdf',
+plt.savefig('5-Percentage_CN.pdf',
             bbox_inches='tight',
             dpi=300,
             facecolor='white')

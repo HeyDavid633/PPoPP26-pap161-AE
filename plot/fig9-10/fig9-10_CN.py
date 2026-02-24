@@ -4,6 +4,11 @@ import numpy as np
 import re
 import argparse
 import os
+from matplotlib import font_manager
+
+# 配置中文字体路径
+simsun_path = '/System/Library/Fonts/Supplemental/Songti.ttc'  # Mac 宋体
+zh_font = font_manager.FontProperties(fname=simsun_path)
 
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42 
@@ -76,8 +81,8 @@ def normalize_data(data):
 
 
 def plot_performance(data_list, subtitles, gpu_info):
-    fig, axs = plt.subplots(2, 2, figsize=(40, 10))
-    plt.subplots_adjust(left=0.03, right=0.98, wspace=0.05, hspace=1.1)
+    fig, axs = plt.subplots(4, 1, figsize=(35, 24))
+    plt.subplots_adjust(left=0.03, right=0.98, wspace=0.05, hspace=0.8)
     axs = axs.flatten()
 
     bar_width = 0.45  
@@ -86,12 +91,12 @@ def plot_performance(data_list, subtitles, gpu_info):
 
     colors = {
         'Torch Naive': '#999696',
-        'SPLAT': '#c9b1f4',  
+        'SPLAT': '#d06c5a',  
         'MCFuser': '#f4b1c9',
-        'ByteTrans': '#f2edb7',
+        'ByteTrans': '#c9b1f4',
         'FlashAttn2': '#dff1d7',
-        'FlexAttn': '#afc8ea',
-        'Our Kernel': '#d06c5a'
+        'FlexAttn': '#f2edb7',
+        'Our Kernel':'#afc8ea',
     }
     seq_spacing = 3.5
 
@@ -170,8 +175,9 @@ def plot_performance(data_list, subtitles, gpu_info):
 
         ax.set_xticks(all_x, minor=True)
         ax.set_xticklabels(seq_labels, minor=True, fontsize=30)
-        ax.set_ylabel('Speedup', fontsize=42)
-        ax.set_title(title, fontsize=42, pad=20, y=-0.58)
+        # ax.set_ylabel('Speedup', fontsize=42)
+        ax.set_ylabel('加速比', fontsize=42, fontproperties=zh_font)
+        ax.set_title(title, fontsize=42, pad=20, y=-0.48)
         ax.set_ylim(bottom=0)
         ax.margins(y=0)
         ax.margins(x=0.01)
@@ -199,13 +205,13 @@ def plot_performance(data_list, subtitles, gpu_info):
         labels=label_name,
         loc='upper center',
         ncol=7, 
-        bbox_to_anchor=(0.5, 1.065),
+        bbox_to_anchor=(0.5, 1.035),
         frameon=False,
         fontsize=38 
     )
 
     plt.tight_layout()
-    plt.savefig('5-eva-MHA-' + gpu_info + '.pdf', bbox_inches='tight')
+    plt.savefig('5-eva-MHA-' + gpu_info + '_CN.pdf', bbox_inches='tight')
 
 def main():
 
@@ -217,12 +223,19 @@ def main():
     parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_A100.txt",type=str, help='Path to the input onlymc_txt file.')
     parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_A100.txt", type=str,
                         help='Path to the input SPLAT txt file.')
+    # parser.add_argument('--file_path1', default="../../data/MHA_Performance/fig_9_10_mask_4090_0.txt",)
+    # parser.add_argument('--file_path2', default="../../data/MHA_Performance/fig_9_10_mask_4090_1.txt",)
+    # parser.add_argument('--file_path3', default="../../data/MHA_Performance/fig_9_10_mask_4090_2.txt",)
+    # parser.add_argument('--file_path4', default="../../data/MHA_Performance/fig_9_10_mask_4090_3.txt",)
+    # parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_4090.txt",type=str, help='Path to the input onlymc_txt file.')
+    # parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_4090.txt", type=str,
+    #                     help='Path to the input SPLAT txt file.')
     args = parser.parse_args()
 
     # import torch
     # gpu_name = torch.cuda.get_device_name()
-    # gpu_name = "NVIDIA A100"
-    gpu_name = "4090"
+    gpu_name = "NVIDIA A100"
+    # gpu_name = "4090"
     gpu_info = ""
     if "A100" in gpu_name:
         gpu_info = "A100"

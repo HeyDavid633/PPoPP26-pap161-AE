@@ -4,6 +4,8 @@ from matplotlib.ticker import MultipleLocator
 import re
 import matplotlib as mpl
 
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42 
 
 def parse_file(file_path, is_mcfuser=False):
     data = {}

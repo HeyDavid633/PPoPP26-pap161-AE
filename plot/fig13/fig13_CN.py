@@ -4,6 +4,11 @@ import matplotlib.ticker as mtick
 import numpy as np
 from matplotlib import rcParams
 from matplotlib import transforms
+from matplotlib import font_manager
+
+# 配置中文字体路径
+simsun_path = '/System/Library/Fonts/Supplemental/Songti.ttc'  # Mac 宋体
+zh_font = font_manager.FontProperties(fname=simsun_path)
 
 plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42 
@@ -67,8 +72,8 @@ for bs_seq in data:
             "Reward Algorithm": data[bs_seq][model]["Reward Algorithm"] / total
         }
 
-
 categories = ['Reward Algorithm', 'Numercial Decoding', 'Hash Encoding', 'Analytical Model']
+categories_CN = ['奖励算法', '数值解码', '哈希编码', '解析模型']
 colors = ['#afc8ea', '#dff1d7', '#f2edb7', '#f4b1c9']
 model_order = ['Bert-base', 'Bert-large', 'GPT-2',  'LLaMA' ,'T5','ViT']
 bs_seq_order = ['(1,128)', '(8,512)', '(16,2048)']
@@ -110,7 +115,7 @@ for i, cat in enumerate(categories):
     bottom += heights
 
 
-ax.set_ylabel('Percentage', fontsize=58)
+ax.set_ylabel('开销占比', fontsize=48, fontproperties=zh_font)
 ax.yaxis.set_major_formatter(mtick.PercentFormatter(decimals=1))
 ax.set_ylim(0, 3)
 ax.tick_params(axis='y', labelsize=38)
@@ -123,7 +128,7 @@ ax.set_xticks([])
 ax.set_xticklabels([])
 
 
-x_labelss=  ['BERT-Base', 'BERT-Large', 'GPT-2',  'LLaMA' ,'T5', 'ViT']
+x_labelss=  ['BERT-B', 'BERT-L', 'GPT',  'LLaMA' ,'T5', 'ViT']
 
 for pos, label,i in zip(positions, x_labels,range(18)):
 
@@ -147,11 +152,11 @@ for label in ax.get_xticklabels():
 for center, label in zip(group_boundaries, bs_seq_order):
     fig.text(
         x=center-0.07,
-        y=-0.60,
+        y=-0.45,
         s=label,
         ha='center',
         va='top',
-        fontsize=58,
+        fontsize=48,
         transform=ax.get_xaxis_transform(),
         clip_on=False
     )
@@ -169,18 +174,19 @@ for boundary in group_boundaries[:-1]:
 
 handles, labels = ax.get_legend_handles_labels()
 handles = handles[::-1]
-labels=labels[::-1]
+# labels=labels[::-1]
+labels = categories_CN[::-1]
 legend = fig.legend(
     handles=handles,
     labels=labels,
-    ncol=2,
-    bbox_to_anchor=(0.5, 1.37),
+    ncol=4,
+    bbox_to_anchor=(0.5, 1.25),
     loc='upper center',
-    fontsize=60,
+    prop={'family': zh_font.get_name(), 'size': 48},
     edgecolor='black',
     framealpha=1,
     frameon=False
 )
 ax.margins(x=0.03)
 plt.tight_layout()
-plt.savefig('5-ablation.pdf', dpi=450, bbox_inches='tight')
+plt.savefig('5-ablation_CN.pdf', dpi=450, bbox_inches='tight')

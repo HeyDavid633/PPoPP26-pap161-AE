@@ -4,6 +4,14 @@ import numpy as np
 import argparse
 import os
 from matplotlib import rcParams
+from matplotlib import font_manager
+
+# 配置中文字体路径
+simsun_path = '/System/Library/Fonts/Supplemental/Songti.ttc'  # Mac 宋体
+zh_font = font_manager.FontProperties(fname=simsun_path)
+
+C_BASE  = (250/255, 225/255, 169/255)  # beige (分离的算子)
+C_FINAL = (141/255, 167/255, 219/255)  # blue (融合的算子)
 
 rcParams['font.family'] = 'Times New Roman'
 rcParams['font.size'] = 10
@@ -13,8 +21,8 @@ plt.rcParams['pdf.fonttype'] = 42
 plt.rcParams['ps.fonttype'] = 42 
 
 parser = argparse.ArgumentParser(description="Generate performance acceleration charts from CSV data.")
-# parser.add_argument("--input_file", type=str,  default="../../data/Motivation/3-moti-4090_3_2.csv", help="Path to the input CSV file")
-parser.add_argument("--input_file", type=str,  default="../../data/Motivation/3-moti-A100_3_2.csv", help="Path to the input CSV file")
+parser.add_argument("--input_file", type=str,  default="../../data/Motivation/3-moti-4090_3_2.csv", help="Path to the input CSV file")
+# parser.add_argument("--input_file", type=str,  default="../../data/Motivation/3-moti-A100_3_2.csv", help="Path to the input CSV file")
 args = parser.parse_args()
 
 plt.rcParams['font.family'] = ['serif']
@@ -25,7 +33,7 @@ df = pd.read_csv(input_file)
 df.columns = df.columns.str.strip()
 operators = df['Operator'].unique()
 
-fig, axes = plt.subplots(1, len(operators), figsize=(16, 2), sharey=True, gridspec_kw={'wspace': 0})
+fig, axes = plt.subplots(1, len(operators), figsize=(16, 3), sharey=True, gridspec_kw={'wspace': 0})
 bar_width = 0.24
 colors = ['#afc8ea', '#dff1d7']
 y_cutoff = 3
@@ -63,9 +71,9 @@ for idx, op in enumerate(operators):
     x = np.arange(len(labels))
 
     rects1 = axes[idx].bar(x - bar_width / 2 - 0.04, op_data['PyTorch_Baseline'], bar_width,
-                           color=colors[0], edgecolor='black', linewidth=1.2)
+                           color=C_BASE, edgecolor='black', linewidth=1.2)
     rects2 = axes[idx].bar(x + bar_width / 2, op_data['Triton_Speedup'], bar_width,
-                           color=colors[1], edgecolor='black', linewidth=1.2)
+                           color=C_FINAL, edgecolor='black', linewidth=1.2)
 
     xtick_positions = x + (- 0.02)
 
@@ -78,20 +86,20 @@ for idx, op in enumerate(operators):
 
     axes[idx].set_ylim(0, y_cutoff)
     axes[idx].set_yticks(np.arange(0, y_cutoff + 1, 1))
-    axes[idx].set_yticklabels(np.arange(0, y_cutoff + 1, 1), fontname='Times New Roman')
+    axes[idx].set_yticklabels(np.arange(0, y_cutoff + 1, 1), fontname='Times New Roman', fontsize=25)
 
-    axes[idx].text(0.5, 0.65, op, fontsize=25, fontname='Times New Roman',
+    axes[idx].text(0.5, 1.05, op, fontsize=25, fontname='Times New Roman',
                    ha='center', va='bottom', transform=axes[idx].transAxes)
 
     axes[idx].grid(True, linestyle='--', alpha=0.6, axis='y')
 
     if idx == 0:
-        axes[idx].set_ylabel('Speedup', fontsize=29, fontname='Times New Roman')
+        axes[idx].set_ylabel('加速比', fontsize=20, fontname=zh_font.get_name())
         legend_handles = [rects1[0], rects2[0]]
 
 fig.legend(handles=legend_handles,
-           labels=['Detached', 'Fused'],
-           prop={'family': 'Times New Roman', 'size': 29},
+           labels=['分离的算子', '融合的算子'],
+           prop={'family': zh_font.get_name(), 'size': 20},
            loc='upper center',
            ncol=2,
            bbox_to_anchor=(0.513, 1.29),
@@ -99,7 +107,7 @@ fig.legend(handles=legend_handles,
            framealpha=1.0)
 
 input_filename = os.path.basename(input_file)
-output_file = os.path.splitext(input_filename)[0] + '.pdf'
+output_file = os.path.splitext(input_filename)[0] + '_CN.pdf'
 plt.savefig(output_file, dpi=300, bbox_inches='tight')
 plt.close()
 

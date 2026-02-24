@@ -3,7 +3,11 @@ import numpy as np
 from matplotlib.ticker import MultipleLocator
 import re
 import matplotlib as mpl
+from matplotlib import font_manager
 
+# 配置中文字体路径
+simsun_path = '/System/Library/Fonts/Supplemental/Songti.ttc'  # Mac 宋体
+zh_font = font_manager.FontProperties(fname=simsun_path)
 
 def parse_file(file_path, is_mcfuser=False):
     data = {}
@@ -76,10 +80,10 @@ def parse_file2(file_path, is_mcfuser=False):
     return data
 
 
-import torch
-gpu_name = torch.cuda.get_device_name()
+# import torch
+# gpu_name = torch.cuda.get_device_name()
 # gpu_name = "NVIDIA A100"
-# gpu_name = "4090"
+gpu_name = "4090"
 gpu_info = ""
 if "A100" in gpu_name:
     gpu_info = "A100"
@@ -178,10 +182,10 @@ rcParams['font.family'] = 'Times New Roman'
 rcParams['font.size'] = 25
 
 MODELS = ['bert_base', 'bert_large', 'gpt', 'llama_base', 't5', 'vit_base']
-models = ['BERT-Base', 'BERT-Large', 'GPT-2', 'LLaMA', 'T5', 'ViT']
+models = ['BERT-B', 'BERT-L', 'GPT', 'LLaMA', 'T5', 'ViT']
 BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 METHODS = ['Torch Native', 'MCFuser', 'ByteTransformer', 'Bolt', 'Torch Compile', 'STOF']
-COLORS = ['#999696', '#f4b1c9', '#f2edb7', '#dff1d7', '#afc8ea', '#d06c5a']
+COLORS = ['#999696', '#f4b1c9', '#d06c5a', '#dff1d7','#f2edb7', '#afc8ea']
 LABEL_NAMES = ['PyTorch Native', 'MCFuser', 'ByteTransformer', 'Bolt', 'PyTorch Compile', 'STOF']
 
 
@@ -242,7 +246,7 @@ def plot_subplot(ax, data, panel_label):
         ax.axvline(x, color='gray', linestyle='--', linewidth=3)
 
 
-    ax.set_ylabel('Speedup', fontsize=34)
+    ax.set_ylabel('加速比', fontsize=34, fontproperties=zh_font)
     ax.set_ylim(0, 4)
     ax.set_yticks([0, 1, 2, 3, 4])
     ax.yaxis.set_minor_locator(plt.MultipleLocator(1))
@@ -253,7 +257,7 @@ def plot_subplot(ax, data, panel_label):
 
     label_y_positions = {
         'model': -0.05,
-        'bs_seq': -2.05,
+        'bs_seq': -1.30,
         'panel': -2.75
     }
 
@@ -287,13 +291,13 @@ def plot_subplot(ax, data, panel_label):
 
 
     total_width = len(BS_SEQ_PAIRS) * (group_width + group_spacing) - group_spacing
-    ax.text(total_width / 2, label_y_positions['panel'],
-            panel_label,
-            ha='center', va='top', fontsize=34)
+    # ax.text(total_width / 2, label_y_positions['panel'],
+    #         panel_label,
+    #         ha='center', va='top', fontsize=34)
 
 
 
-fig, (ax1) = plt.subplots(1, 1, figsize=(40, 3.6), dpi=300, gridspec_kw={'wspace': 0.08})
+fig, (ax1) = plt.subplots(1, 1, figsize=(24, 4), dpi=300, gridspec_kw={'wspace': 0.08})
 
 
 
@@ -307,12 +311,12 @@ fig.legend(legend_elements, LABEL_NAMES,
            loc='upper center',
            ncol=6,
            frameon=False,
-           fontsize=34.4,
+           fontsize=26,
            bbox_to_anchor=(0.5, 1.16))
 
 
 plt.subplots_adjust(wspace=0.12)
-plt.savefig('5-eva-EE-' + gpu_info + '.pdf',
+plt.savefig('5-eva-EE-' + gpu_info + '_CN.pdf',
             bbox_inches='tight',
             dpi=300,
             facecolor='white')
