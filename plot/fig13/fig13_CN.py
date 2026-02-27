@@ -74,7 +74,10 @@ for bs_seq in data:
 
 categories = ['Reward Algorithm', 'Numercial Decoding', 'Hash Encoding', 'Analytical Model']
 categories_CN = ['奖励算法', '数值解码', '哈希编码', '解析模型']
-colors = ['#afc8ea', '#dff1d7', '#f2edb7', '#f4b1c9']
+
+colors = ['#1565C0', '#64B5F6', '#BBDEFB', '#999696']
+# colors = ['#999696', '#BBDEFB', '#64B5F6', '#1565C0']
+# colors = ['#afc8ea', '#dff1d7', '#f2edb7', '#f4b1c9']
 model_order = ['Bert-base', 'Bert-large', 'GPT-2',  'LLaMA' ,'T5','ViT']
 bs_seq_order = ['(1,128)', '(8,512)', '(16,2048)']
 
@@ -189,4 +192,4 @@ legend = fig.legend(
 )
 ax.margins(x=0.03)
 plt.tight_layout()
-plt.savefig('5-ablation_CN.pdf', dpi=450, bbox_inches='tight')
+plt.savefig('5-ablation_CN_2.pdf', dpi=450, bbox_inches='tight')

@@ -169,9 +169,11 @@ MODEL_NAMES = ['BERT-B', 'BERT-L', 'GPT', 'LLaMA', 'T5', 'ViT']
 BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 
 METHODS = ['Torch Native', 'Torch Compile', 'PyTorch Compile with broken MHA boundary', 'STOF MHA', 'STOF Compiled', 'STOF', ]
-COLORS = ['#999595','#AEC7EA', '#DFF1D7', '#F4B1C8', '#F2EDB6', '#CF6B5A',  ] 
+# COLORS = ['#999595','#AEC7EA', '#DFF1D7', '#F4B1C8', '#F2EDB6', '#CF6B5A',  ] 
+
+COLORS = ['#999696', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1565C0']
 # LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile without MHA boundary', 'Only MHA Module', 'Only Fusion Module', 'MHA Module+Fusion Module',  ]
-LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile 破坏MHA boundary', '仅MHA融合模块', '仅下游融合模块', 'MHA融合模块+下游融合模块',  ]
+LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile（无MHA边界）', '仅MHA融合模块', '仅下游融合模块', 'MHA融合模块+下游融合模块',  ]
 
 
 def extract_data(normalized_data):
@@ -281,7 +283,7 @@ fig.legend(legend_elements1, LABEL_NAMES[:6],
 
 
 plt.subplots_adjust(wspace=0.12, top=0.78)
-plt.savefig('5-Percentage_CN.pdf',
+plt.savefig('5-Percentage_CN_2.pdf',
             bbox_inches='tight',
             dpi=300,
             facecolor='white')

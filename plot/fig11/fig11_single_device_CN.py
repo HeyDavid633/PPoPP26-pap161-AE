@@ -82,8 +82,8 @@ def parse_file2(file_path, is_mcfuser=False):
 
 # import torch
 # gpu_name = torch.cuda.get_device_name()
-# gpu_name = "NVIDIA A100"
-gpu_name = "4090"
+gpu_name = "NVIDIA A100"
+# gpu_name = "4090"
 gpu_info = ""
 if "A100" in gpu_name:
     gpu_info = "A100"
@@ -185,7 +185,18 @@ MODELS = ['bert_base', 'bert_large', 'gpt', 'llama_base', 't5', 'vit_base']
 models = ['BERT-B', 'BERT-L', 'GPT', 'LLaMA', 'T5', 'ViT']
 BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 METHODS = ['Torch Native', 'MCFuser', 'ByteTransformer', 'Bolt', 'Torch Compile', 'STOF']
-COLORS = ['#999696', '#f4b1c9', '#d06c5a', '#dff1d7','#f2edb7', '#afc8ea']
+# COLORS = ['#999696', '#f4b1c9', '#d06c5a', '#dff1d7','#f2edb7', '#afc8ea']
+COLORS = ['#999696', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1565C0']
+    # 'Torch Naive': '#999696',
+    # 'SPLAT':       '#E3F2FD',   # 最浅蓝 (基准)
+    # 'MCFuser':     '#BBDEFB',   # 浅蓝
+    # 'ByteTrans':   '#90CAF9',   # 稍深蓝 
+    # 'FlashAttn2':  '#64B5F6',   # 中蓝
+    # 'FlexAttn':    '#2196F3',   # 深蓝
+    # 'Our Kernel':  '#1565C0'    # 最深蓝 (突出显示)
+    
+
+
 LABEL_NAMES = ['PyTorch Native', 'MCFuser', 'ByteTransformer', 'Bolt', 'PyTorch Compile', 'STOF']
 
 
@@ -316,7 +327,7 @@ fig.legend(legend_elements, LABEL_NAMES,
 
 
 plt.subplots_adjust(wspace=0.12)
-plt.savefig('5-eva-EE-' + gpu_info + '_CN.pdf',
+plt.savefig('5-eva-EE-' + gpu_info + '_CN_2.pdf',
             bbox_inches='tight',
             dpi=300,
             facecolor='white')

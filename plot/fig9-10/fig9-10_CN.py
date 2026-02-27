@@ -89,15 +89,25 @@ def plot_performance(data_list, subtitles, gpu_info):
     bs_order = [1, 8, 16]
     seq_order = [128, 256, 512, 1024, 2048, 4096]
 
+    # colors = {
+    #     'Torch Naive': '#999696',
+    #     'SPLAT':  '#d06c5a',  
+    #     'MCFuser': '#f4b1c9',
+    #     'ByteTrans': '#c9b1f4',
+    #     'FlashAttn2': '#dff1d7',
+    #     'FlexAttn': '#f2edb7',
+    #     'Our Kernel':'#afc8ea',
+    # }
     colors = {
         'Torch Naive': '#999696',
-        'SPLAT': '#d06c5a',  
-        'MCFuser': '#f4b1c9',
-        'ByteTrans': '#c9b1f4',
-        'FlashAttn2': '#dff1d7',
-        'FlexAttn': '#f2edb7',
-        'Our Kernel':'#afc8ea',
+        'SPLAT':       '#E3F2FD',   # 最浅蓝 (基准)
+        'MCFuser':     '#BBDEFB',   # 浅蓝
+        'ByteTrans':   '#90CAF9',   # 稍深蓝 
+        'FlashAttn2':  '#64B5F6',   # 中蓝
+        'FlexAttn':    '#2196F3',   # 深蓝
+        'Our Kernel':  '#1565C0'    # 最深蓝 (突出显示)
     }
+    
     seq_spacing = 3.5
 
     def add_labels_with_cutoff(rects, ax, cutoff):
@@ -211,7 +221,7 @@ def plot_performance(data_list, subtitles, gpu_info):
     )
 
     plt.tight_layout()
-    plt.savefig('5-eva-MHA-' + gpu_info + '_CN.pdf', bbox_inches='tight')
+    plt.savefig('5-eva-MHA-' + gpu_info + '_CN_2.pdf', bbox_inches='tight')
 
 def main():
 
@@ -234,8 +244,8 @@ def main():
 
     # import torch
     # gpu_name = torch.cuda.get_device_name()
-    gpu_name = "NVIDIA A100"
-    # gpu_name = "4090"
+    # gpu_name = "NVIDIA A100"
+    gpu_name = "4090"
     gpu_info = ""
     if "A100" in gpu_name:
         gpu_info = "A100"
