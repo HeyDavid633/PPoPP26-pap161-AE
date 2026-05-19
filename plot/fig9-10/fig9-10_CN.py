@@ -102,9 +102,9 @@ def plot_performance(data_list, subtitles, gpu_info):
         'Torch Naive': '#999696',
         'SPLAT':       '#E3F2FD',   # 最浅蓝 (基准)
         'MCFuser':     '#BBDEFB',   # 浅蓝
-        'ByteTrans':   '#90CAF9',   # 稍深蓝 
+        'ByteTrans':   '#c9b1f4',   # 紫
         'FlashAttn2':  '#64B5F6',   # 中蓝
-        'FlexAttn':    '#2196F3',   # 深蓝
+        'FlexAttn':    '#f2edb7',   # 黄
         'Our Kernel':  '#1565C0'    # 最深蓝 (突出显示)
     }
     
@@ -226,20 +226,20 @@ def plot_performance(data_list, subtitles, gpu_info):
 def main():
 
     parser = argparse.ArgumentParser(description='Plot MHA performance')
-    parser.add_argument('--file_path1', default="../../data/MHA_Performance/fig_9_10_mask_0.txt",)
-    parser.add_argument('--file_path2', default="../../data/MHA_Performance/fig_9_10_mask_1.txt",)
-    parser.add_argument('--file_path3', default="../../data/MHA_Performance/fig_9_10_mask_2.txt",)
-    parser.add_argument('--file_path4', default="../../data/MHA_Performance/fig_9_10_mask_3.txt",)
-    parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_A100.txt",type=str, help='Path to the input onlymc_txt file.')
-    parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_A100.txt", type=str,
-                        help='Path to the input SPLAT txt file.')
-    # parser.add_argument('--file_path1', default="../../data/MHA_Performance/fig_9_10_mask_4090_0.txt",)
-    # parser.add_argument('--file_path2', default="../../data/MHA_Performance/fig_9_10_mask_4090_1.txt",)
-    # parser.add_argument('--file_path3', default="../../data/MHA_Performance/fig_9_10_mask_4090_2.txt",)
-    # parser.add_argument('--file_path4', default="../../data/MHA_Performance/fig_9_10_mask_4090_3.txt",)
-    # parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_4090.txt",type=str, help='Path to the input onlymc_txt file.')
-    # parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_4090.txt", type=str,
+    # parser.add_argument('--file_path1', default="../../data/MHA_Performance/fig_9_10_mask_0.txt",)
+    # parser.add_argument('--file_path2', default="../../data/MHA_Performance/fig_9_10_mask_1.txt",)
+    # parser.add_argument('--file_path3', default="../../data/MHA_Performance/fig_9_10_mask_2.txt",)
+    # parser.add_argument('--file_path4', default="../../data/MHA_Performance/fig_9_10_mask_3.txt",)
+    # parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_A100.txt",type=str, help='Path to the input onlymc_txt file.')
+    # parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_A100.txt", type=str,
     #                     help='Path to the input SPLAT txt file.')
+    parser.add_argument('--file_path1', default="../../data/MHA_Performance/fig_9_10_mask_4090_0.txt",)
+    parser.add_argument('--file_path2', default="../../data/MHA_Performance/fig_9_10_mask_4090_1.txt",)
+    parser.add_argument('--file_path3', default="../../data/MHA_Performance/fig_9_10_mask_4090_2.txt",)
+    parser.add_argument('--file_path4', default="../../data/MHA_Performance/fig_9_10_mask_4090_3.txt",)
+    parser.add_argument('--onlymc_file_path', default="../../data/MHA_Performance/attn_perf_only_MCFuser_4090.txt",type=str, help='Path to the input onlymc_txt file.')
+    parser.add_argument('--splat_file_path', default="../../data/MHA_Performance/attn_perf_only_SPLAT_4090.txt", type=str,
+                        help='Path to the input SPLAT txt file.')
     args = parser.parse_args()
 
     # import torch

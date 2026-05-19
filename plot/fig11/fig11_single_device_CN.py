@@ -186,7 +186,8 @@ models = ['BERT-B', 'BERT-L', 'GPT', 'LLaMA', 'T5', 'ViT']
 BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 METHODS = ['Torch Native', 'MCFuser', 'ByteTransformer', 'Bolt', 'Torch Compile', 'STOF']
 # COLORS = ['#999696', '#f4b1c9', '#d06c5a', '#dff1d7','#f2edb7', '#afc8ea']
-COLORS = ['#999696', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1565C0']
+COLORS = ['#999696', '#E3F2FD','#c9b1f4', '#64B5F6', '#f2edb7', '#1565C0']
+
     # 'Torch Naive': '#999696',
     # 'SPLAT':       '#E3F2FD',   # 最浅蓝 (基准)
     # 'MCFuser':     '#BBDEFB',   # 浅蓝

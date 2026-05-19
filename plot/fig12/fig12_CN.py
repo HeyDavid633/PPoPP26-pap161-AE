@@ -171,7 +171,9 @@ BS_SEQ_PAIRS = [(1, 128), (8, 512), (16, 2048)]
 METHODS = ['Torch Native', 'Torch Compile', 'PyTorch Compile with broken MHA boundary', 'STOF MHA', 'STOF Compiled', 'STOF', ]
 # COLORS = ['#999595','#AEC7EA', '#DFF1D7', '#F4B1C8', '#F2EDB6', '#CF6B5A',  ] 
 
-COLORS = ['#999696', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1565C0']
+# COLORS = ['#999696', '#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#1565C0']
+COLORS = ['#999696', '#E3F2FD','#c9b1f4', '#64B5F6', '#f2edb7', '#1565C0']
+
 # LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile without MHA boundary', 'Only MHA Module', 'Only Fusion Module', 'MHA Module+Fusion Module',  ]
 LABEL_NAMES = ['PyTorch Native', 'PyTorch Compile', 'PyTorch Compile（无MHA边界）', '仅MHA融合模块', '仅下游融合模块', 'MHA融合模块+下游融合模块',  ]
 
